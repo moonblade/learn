@@ -3,10 +3,77 @@
 <head>
 	<title>test</title>
 	<script type="text/javascript" src="test.js"></script>
-	<link rel="stylesheet" type="text/css" href="test.css">
+	<link rel="stylesheet" href="test.css">
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"> -->
 </head>
 <body>
-<input type="text" id="test">
-<button onclick="clicked()" >click</button>
+	<!-- see red with tag -->
+	<div class="">
+		<input type="text" id="test" placeholder="red using button tag">
+		<button class="" onclick="clicked()" >click</button>
+	</div>
+	<!-- see hover -->
+	<div class="">
+		<input type="text" id="test" placeholder="blue on hover">
+		<button id="hoverButton" onclick="clicked()" >click</button>
+	</div>
+
+	<!-- using classes -->
+	<div class="">
+		<input type="text" id="test" placeholder="green using class btn">
+		<button class="btn" onclick="clicked()" >click</button>
+	</div>
+
+	<!-- using id -->
+	<div class="">
+		<input type="text" id="test" placeholder="yellow using id">
+		<button id="myButton" onclick="clicked()" >click</button>
+	</div>
+
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+
+	<!-- override btn class using outerclass innerclass-->
+	<!-- sample use is say btn gives many styles (width height, color etc), but only one needs to be changed, so that one will be changed here -->
+	<div class="outerClass">
+		<input type="text" id="test" placeholder="has btn class, but overrode using outerclass innerclass">
+		<button class="innerClass btn" onclick="clicked()" >click</button>
+	</div>
+
+	<!-- two classes on the same thing -->
+	<div class="">
+		<input type="text" id="test" placeholder="applied bold, red, and uppercase as classes">
+		<button class="hasRedColor isBold isUpperCase" onclick="clicked()" >click</button>
+	</div>
+
+	<!-- selection using two classes on the same thing -->
+	<!-- use case might vary, but might be to change behaviour than normal -->
+	<div class="">
+		<input type="text" id="test" placeholder="applied bold, red, and uppercase as classes">
+		<button class="isLowerCase isUpperCase" onclick="clicked()" >click</button>
+	</div>
+
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	
+	<!-- specificity is calculated using score, don't need to know how, just know that more specific style wins over the lower one -->
+	<!-- mostly used like less specific will have more styles, and as specificity increses only some styles which need to be overridden are added -->
+	<div class="">
+		<input type="text" id="test" placeholder="id overrides class">
+		<button id="myButton" color="hasRedColor" onclick="clicked()" >click</button>
+	</div>
+
+	<div class="outerClass">
+		<input type="text" id="test" placeholder="outer plus inner is more specific that just one class">
+		<button class="innerClass btn" color="hasRedColor" onclick="clicked()" >click</button>
+	</div>
 </body>
 </html>

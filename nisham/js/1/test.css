@@ -1,3 +1,59 @@
 button {
-	color : red;
+	/*using tag*/
+	background-color : red;
+	width: 20%;
+}
+
+#hoverButton:hover {
+	/*using : descriptor, not sure what they are called*/
+	background-color: blue;
+	width: 20%;
+}
+
+.btn {
+	/*using classes*/
+	background-color: green;
+	width: 20%;
+}
+
+#myButton {
+	/*ideally id should only be used once, though it can be used just like class*/
+	background-color : yellow;
+	width: 20%;
+}
+
+
+.outerClass .innerClass {
+		background-color : magenta;
+		/*width is already applied using .btn class but background-color is overridden*/
+}
+
+
+/*two apply two things to the button at once, can use two classes*/
+.hasRedColor {
+	background-color: red;
+}
+
+.isBold {
+	font-weight: bold;
+}
+
+.isUpperCase {
+	text-transform: uppercase;
+}
+
+.isLowerCase {
+	text-transform: lowercase;
+}
+
+/*but if someone gives both isUpper and isLower, then do something else*/
+/*notice the lack of space, so its not one inside another*/
+.isUpperCase.isLowerCase {
+	text-transform: lowercase;
+	font-weight: bold;
+	font-size: 30px;
+}
+
+input {
+	width: 70%;
 }
