@@ -1,0 +1,14 @@
+#abt {
+	/*padding-top:	70px;*/
+	height:			700px;
+	font-size: 		40px;
+	color: 			blue;
+	background-color: lightblue;
+}
+
+#prt{
+	height: 		700px;
+	font-size:		40px;
+	background-color: lightgrey;
+	color:			black;
+}
