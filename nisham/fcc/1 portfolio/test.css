@@ -1,37 +1,33 @@
 body{
 	position: relative;
 }
-#section1 {
+#about {
     padding-top: 50px;
-    height: 500px;
+    height: 100%;
     color: #fff;
     background-color: #1E88E5;
 }
-
-#section2 {
+/*Really really bad way of doing this*/
+.bottom {
+    margin-top: 350px;
+    margin-bottom: 0;
+}
+#about p {
+    font-size: 20px;
+    color: #fff;
+}
+#portfolio {
     padding-top: 50px;
-    height: 500px;
+    height: 100%;
     color: #fff;
     background-color: #673ab7;
 }
-
-#section3 {
-    padding-top: 50px;
-    height: 500px;
+#portfolio p {
+    font-size: 18px;
     color: #fff;
-    background-color: #ff9800;
 }
 
-#section41 {
-    padding-top: 50px;
-    height: 500px;
-    color: #fff;
-    background-color: #00bcd4;
-}
-
-#section42 {
-    padding-top: 50px;
-    height: 500px;
-    color: #fff;
-    background-color: #009688;
+.portImage {
+    height: 37%;
+    width: 100%;
 }
