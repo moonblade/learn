@@ -1,3 +1,4 @@
+/*Algorithm to rotate array of size 'n' by 'd' elements*/
 #include "stdio.h"
 void rotate(int a[],int n){
 	int temp = a[0];
@@ -6,7 +7,7 @@ void rotate(int a[],int n){
 	}
 	a[n-1] = temp;
 }
-//why dont we need to give pointer
+
 int main(int argc, char const *argv[])
 {
 	int a[] = {1,2,3,4,5};

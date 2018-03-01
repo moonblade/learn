@@ -1,3 +1,4 @@
+/*Find the number occuring odd number of times in a given array of size 'n'*/
 #include <stdio.h>
 struct intCount
 {

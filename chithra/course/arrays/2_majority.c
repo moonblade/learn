@@ -1,3 +1,5 @@
+/* Find a majority element in an array of size 'n'*/
+
 #include <stdio.h>
 struct intCount
 {

@@ -1,3 +1,4 @@
+/*Algorithm to reverse an array*/
 #include "stdio.h"
 int main(int argc, char const *argv[])
 {
