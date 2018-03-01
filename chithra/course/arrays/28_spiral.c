@@ -10,12 +10,12 @@ void printSpiral(int a[][N]){
 			printf("%d ",a[k][j] );
 		for(int i=k+1;i<R-1-k;i++)
 			printf("%d ",a[i][N-1-k] );
-		if (k!=R/2){	
+		if (k!=R/2 && R%2!=0){	
 			for(int j=N-1-k;j>=k;j--)
 				printf("%d ",a[R-1-k][j]);
+		}
 			for(int i=R-2-k;i>k;i--)
 				printf("%d ",a[i][k]);
-		}
 	}
 	printf("\n");
 }
