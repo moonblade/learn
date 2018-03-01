@@ -5,7 +5,7 @@
 #define R 3
 
 void printSpiral(int a[][N]){
-	for(int k=0;k<=R/2;k++){
+	for(int k=0;k<R;k++){
 		for(int j=k; j<N-k; j++)
 			printf("%d ",a[k][j] );
 		for(int i=k+1;i<R-1-k;i++)
@@ -21,6 +21,21 @@ void printSpiral(int a[][N]){
 int main(int argc, char const *argv[])
 {
 	int a[][N] = {{1,2,3,4,5,6},{7,8,9,10,11,12},{13,14,15,16,17,18}};
+	/*
+		1  2  3  4  5  6
+		7  8  9 10 11 12
+	   13 14 15 16 17 18
+
+	   1 2 3 
+	   4 5 6 
+	   7 8 9
+
+	    1  2  3  4
+	    5  6  7  8
+	    9 10 11 12
+	   13 14 15 16
+
+	*/
 	printSpiral(a);
 	return 0;
 }
