@@ -5,15 +5,17 @@
 #define R 3
 
 void printSpiral(int a[][N]){
-	for(int k=0;k<R;k++){
+	for(int k=0;k<=R/2;k++){
 		for(int j=k; j<N-k; j++)
 			printf("%d ",a[k][j] );
 		for(int i=k+1;i<R-1-k;i++)
 			printf("%d ",a[i][N-1-k] );
-		for(int j=N-1-k;j>=k;j--)
-			printf("%d ",a[R-1-k][j]);
-		for(int i=R-2-k;i>k;i--)
-			printf("%d ",a[i][k]);
+		if (k!=R/2){	
+			for(int j=N-1-k;j>=k;j--)
+				printf("%d ",a[R-1-k][j]);
+			for(int i=R-2-k;i>k;i--)
+				printf("%d ",a[i][k]);
+		}
 	}
 	printf("\n");
 }
