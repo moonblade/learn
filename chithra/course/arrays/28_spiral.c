@@ -1,8 +1,8 @@
 /*Traverse the matrix in a spiral form*/
 
 #include <stdio.h>
-#define N 5
-#define R 4
+#define N 6
+#define R 3
 
 void printSpiral(int a[][N]){
 	for(int k=0;k<=R/2;k++){
@@ -23,10 +23,9 @@ void printSpiral(int a[][N]){
 int main(int argc, char const *argv[])
 {
 	int a[][N] = {
-		{1,2,3,4,5},
-		{7,8,9,10,11},
-		{13,14,15,16,17},
-		{18,19,20,21,22}};
+		{1,2,3,4,5,6},
+		{7,8,9,10,11,12},
+		{13,14,15,16,17,18}};
 	/*
 		1  2  3  4  5  6
 		7  8  9 10 11 12
